@@ -301,3 +301,7 @@ input[type="file"] { padding: .6rem; }
 .ghost-tag { z-index: 4; }
 .sil-left .ghost-tag { left: 4%; }
 .sil-right .ghost-tag { right: 4%; }
+
+/* Silhuetas geradas (imagens) */
+.sil img { position: static; width: 100%; max-width: 100%; height: auto; z-index: auto; filter: drop-shadow(0 0 12px rgb(125 33 31 / .7)); }
+.sil-top img { filter: drop-shadow(0 0 10px rgb(125 33 31 / .45)) brightness(1.6); opacity: .8; }
