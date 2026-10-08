@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Páginas – Fúria Mineira</title>
+  <meta name="description" content="Agenda de shows, galeria e contato da Fúria Mineira.">
+  <meta name="theme-color" content="#121617">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Fúria Mineira – início"><img src="assets/logo.png" alt="Fúria Mineira"></a>
+      <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Home</a>
+        <a href="musicas.html">Músicas</a>
+        <a href="membros.html">Membros</a>
+        <a href="sobre.html">Sobre</a>
+        <div class="dropdown current">
+          <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">Páginas ▾</button>
+          <ul class="dropdown-menu">
+            <li><a href="paginas.html#agenda">Agenda</a></li>
+            <li><a href="paginas.html#galeria">Galeria</a></li>
+            <li><a href="paginas.html#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="page-title"><div class="container">
+      <h1>Páginas</h1>
+      <p class="lead">Agenda, galeria e contato.</p>
+    </div></section>
+    <section class="section" id="agenda"><div class="container">
+      <h2>Agenda</h2>
+      <ul class="shows">
+        <li><div class="date"><b>15</b><span>Nov</span></div><div><span class="where">Nome da Casa de Shows</span><span class="city">Belo Horizonte – MG</span></div><a class="btn" href="#">Ingressos</a></li>
+        <li><div class="date"><b>29</b><span>Nov</span></div><div><span class="where">Nome do Bar / Evento</span><span class="city">Ouro Preto – MG</span></div><a class="btn" href="#">Ingressos</a></li>
+        <li><div class="date"><b>13</b><span>Dez</span></div><div><span class="where">Nome do Festival</span><span class="city">Juiz de Fora – MG</span></div><a class="btn" href="#">Ingressos</a></li>
+      </ul>
+    </div></section>
+    <section class="section" id="galeria"><div class="container">
+      <h2>Galeria</h2>
+      <div class="gallery"><div>Foto 1</div><div>Foto 2</div><div>Foto 3</div><div>Foto 4</div><div>Foto 5</div><div>Foto 6</div></div>
+    </div></section>
+    <section class="section" id="contato"><div class="container">
+      <h2>Contato</h2>
+      <p class="lead">Shows, contratações e imprensa: fale com a gente.</p>
+      <p>contato@furiamineira.com.br · (31) 90000-0000</p>
+      <form id="contato-form">
+        <label>Nome<input type="text" name="nome" required></label>
+        <label>E-mail<input type="email" name="email" required></label>
+        <label>Mensagem<textarea name="mensagem" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Enviar</button>
+        <p id="form-ok" hidden>Mensagem enviada! (formulário de demonstração)</p>
+      </form>
+    </div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.png" alt="Fúria Mineira">
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Spotify</a></li>
+      </ul>
+      <p class="muted">© 2026 Fúria Mineira · Minas Gerais, Brasil</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
