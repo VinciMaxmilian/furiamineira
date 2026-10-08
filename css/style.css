@@ -305,3 +305,5 @@ input[type="file"] { padding: .6rem; }
 /* Silhuetas geradas (imagens) */
 .sil img { position: static; width: 100%; max-width: 100%; height: auto; z-index: auto; filter: drop-shadow(0 0 12px rgb(125 33 31 / .7)); }
 .sil-top img { filter: drop-shadow(0 0 10px rgb(125 33 31 / .45)) brightness(1.6); opacity: .8; }
+.sil-top .ghost-tag { top: -1.9rem; bottom: auto; }
+@media (max-width: 820px) { .hero-photo { margin-top: 2.4rem; } .sil-top .ghost-tag { top: -1.6rem; } }
