@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Páginas – Fúria Mineira</title>
-  <meta name="description" content="Agenda de shows, galeria e contato da Fúria Mineira.">
+  <title>Contatos – Fúria Mineira</title>
+  <meta name="description" content="Redes sociais e contato da banda Fúria Mineira.">
   <meta name="theme-color" content="#121617">
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,37 +23,29 @@
         <a href="musicas.html">Músicas</a>
         <a href="membros.html">Membros</a>
         <a href="sobre.html">Sobre</a>
-        <div class="dropdown current">
-          <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">Páginas ▾</button>
-          <ul class="dropdown-menu">
-            <li><a href="paginas.html#agenda">Agenda</a></li>
-            <li><a href="paginas.html#galeria">Galeria</a></li>
-            <li><a href="paginas.html#contato">Contato</a></li>
-          </ul>
-        </div>
+        <a href="contatos.html" aria-current="page">Contatos</a>
       </nav>
     </div>
   </header>
   <main id="conteudo">
     <section class="page-title"><div class="container">
-      <h1>Páginas</h1>
-      <p class="lead">Agenda, galeria e contato.</p>
+      <h1>Contatos</h1>
+      <p class="lead">Siga a banda nas redes e fale com a gente para shows, contratações e imprensa.</p>
     </div></section>
-    <section class="section" id="agenda"><div class="container">
-      <h2>Agenda</h2>
-      <ul class="shows">
-        <li><div class="date"><b>15</b><span>Nov</span></div><div><span class="where">Nome da Casa de Shows</span><span class="city">Belo Horizonte – MG</span></div><a class="btn" href="#">Ingressos</a></li>
-        <li><div class="date"><b>29</b><span>Nov</span></div><div><span class="where">Nome do Bar / Evento</span><span class="city">Ouro Preto – MG</span></div><a class="btn" href="#">Ingressos</a></li>
-        <li><div class="date"><b>13</b><span>Dez</span></div><div><span class="where">Nome do Festival</span><span class="city">Juiz de Fora – MG</span></div><a class="btn" href="#">Ingressos</a></li>
-      </ul>
+    <section class="section"><div class="container">
+      <h2>Redes sociais</h2>
+      <div class="grid cols-3">
+        <a class="card social-card" href="#"><h3>Instagram</h3><p class="muted">@furiamineira</p></a>
+        <a class="card social-card" href="#"><h3>Facebook</h3><p class="muted">/furiamineira</p></a>
+        <a class="card social-card" href="#"><h3>YouTube</h3><p class="muted">@furiamineira</p></a>
+        <a class="card social-card" href="#"><h3>Spotify</h3><p class="muted">Fúria Mineira</p></a>
+        <a class="card social-card" href="#"><h3>WhatsApp</h3><p class="muted">(31) 90000-0000</p></a>
+        <a class="card social-card" href="#"><h3>TikTok</h3><p class="muted">@furiamineira</p></a>
+      </div>
     </div></section>
-    <section class="section" id="galeria"><div class="container">
-      <h2>Galeria</h2>
-      <div class="gallery"><div>Foto 1</div><div>Foto 2</div><div>Foto 3</div><div>Foto 4</div><div>Foto 5</div><div>Foto 6</div></div>
-    </div></section>
-    <section class="section" id="contato"><div class="container">
-      <h2>Contato</h2>
-      <p class="lead">Shows, contratações e imprensa: fale com a gente.</p>
+    <section class="section"><div class="container">
+      <h2>Fale com a gente</h2>
+      <p class="lead">Shows, contratações e imprensa.</p>
       <p>contato@furiamineira.com.br · (31) 90000-0000</p>
       <form id="contato-form">
         <label>Nome<input type="text" name="nome" required></label>
@@ -69,6 +61,7 @@
       <img src="assets/logo.png" alt="Fúria Mineira">
       <ul class="social">
         <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
         <li><a href="#">YouTube</a></li>
         <li><a href="#">Spotify</a></li>
       </ul>
