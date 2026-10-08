@@ -36,8 +36,6 @@
       <h2>Redes sociais</h2>
       <div class="grid cols-3">
         <a class="card social-card" href="#"><h3>Instagram</h3><p class="muted">@furiamineira</p></a>
-        <a class="card social-card" href="#"><h3>Facebook</h3><p class="muted">/furiamineira</p></a>
-        <a class="card social-card" href="#"><h3>YouTube</h3><p class="muted">@furiamineira</p></a>
         <a class="card social-card" href="#"><h3>Spotify</h3><p class="muted">Fúria Mineira</p></a>
         <a class="card social-card" href="#"><h3>WhatsApp</h3><p class="muted">(41) 90000-0000</p></a>
         <a class="card social-card" href="#"><h3>TikTok</h3><p class="muted">@furiamineira</p></a>
@@ -46,16 +44,25 @@
     <section class="section"><div class="container">
       <h2>Fale com a gente</h2>
       <p class="lead">Shows, contratações, imprensa e candidatura para baterista.</p>
-      <p>contato@furiamineira.com.br · (41) 90000-0000</p>
-      <form id="contato-form">
+      <p>E-mail: <a href="mailto:furiamineira@gmail.com">furiamineira@gmail.com</a></p>
+      <p id="form-enviado" class="notice" hidden>Mensagem enviada! Obrigado pelo contato, respondemos em breve.</p>
+      <form id="contato-form" action="https://formsubmit.co/furiamineira@gmail.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="Contato pelo site da Fúria Mineira">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://vincimaxmilian.github.io/furiamineira/contatos.html?enviado=1">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <label>Nome<input type="text" name="nome" required></label>
         <label>E-mail<input type="email" name="email" required></label>
         <label>Assunto
           <select name="assunto"><option>Shows e contratações</option><option>Imprensa</option><option>Quero tocar (baterista)</option><option>Outro</option></select>
         </label>
         <label>Mensagem<textarea name="mensagem" rows="5" required></textarea></label>
+        <label>Anexos (áudio, vídeo ou imagem)
+          <input type="file" name="attachment" accept="audio/*,video/*,image/*" multiple>
+          <span class="hint">Arquivos grandes podem não passar. Nesse caso, envie um link (Drive, YouTube, SoundCloud) na mensagem.</span>
+        </label>
         <button class="btn" type="submit">Enviar</button>
-        <p id="form-ok" hidden>Mensagem enviada! (formulário de demonstração)</p>
       </form>
     </div></section>
   </main>
@@ -64,8 +71,6 @@
       <img src="assets/logo.png" alt="Fúria Mineira">
       <ul class="social">
         <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">YouTube</a></li>
         <li><a href="#">Spotify</a></li>
       </ul>
       <p class="muted">© 2026 Fúria Mineira · Curitiba/PR · origem em Montes Claros/MG</p>

@@ -6,9 +6,8 @@ menuBtn?.addEventListener('click', () => {
   menuBtn.setAttribute('aria-expanded', open);
 });
 
-// Formulário de contato (placeholder – sem backend)
-document.querySelector('#contato-form')?.addEventListener('submit', e => {
-  e.preventDefault();
-  e.target.reset();
-  document.querySelector('#form-ok').hidden = false;
-});
+// Confirmação após envio do formulário (FormSubmit redireciona com ?enviado=1)
+if (new URLSearchParams(location.search).get('enviado')) {
+  const ok = document.querySelector('#form-enviado');
+  if (ok) { ok.hidden = false; ok.scrollIntoView(); }
+}

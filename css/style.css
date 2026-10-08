@@ -266,3 +266,12 @@ html, body { overflow-x: clip; }
 .vacancy .member-photo.placeholder { font-size: 6rem; color: var(--accent); }
 select { font: inherit; color: var(--text); background: var(--bg-deep); border: 1px solid var(--line); padding: .75rem .9rem; }
 select:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+
+/* Pré-produção, anexos */
+.badge { display: inline-block; background: #000; color: var(--text); font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: .85rem; letter-spacing: .15em; text-transform: uppercase; padding: .25rem .7rem; border: 1px solid var(--accent); }
+.cover .badge { margin-top: 1rem; font-size: .8rem; }
+.badge.inline { background: var(--accent); color: var(--on-accent, var(--text)); border-color: var(--accent); }
+.tracklist li.soon .title, .tracklist li.soon::before { opacity: .55; }
+.hint { font-size: .8rem; letter-spacing: 0; text-transform: none; color: var(--text-dim); }
+input[type="file"] { padding: .6rem; }
+.notice { border-left: 6px solid var(--accent); background: var(--bg-card); padding: 1rem 1.2rem; }
